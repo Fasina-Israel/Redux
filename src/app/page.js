@@ -1,6 +1,6 @@
 import Quiz from './quiz/page';
 import { fuziondotonboarding } from './quiz/constants';
-import Onboarding from '../app/onboarding/page';
+import Onboarding from '../../components/onboardingForm/page';
 
 export default function Home() {
   return (
