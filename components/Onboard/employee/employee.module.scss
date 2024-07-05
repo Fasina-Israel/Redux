@@ -1,0 +1,116 @@
+.employeeContainer {
+    display: flex;
+    padding: 2rem 0rem, ;
+    gap: 2rem;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: none;
+    height: 80%;
+
+
+    .firstSection {
+        width: 35%;
+        background-color: none;
+        height: 80%;
+        justify-content: space-evenly;
+        gap: 20%;
+        display: flex;
+        flex-direction: column;
+
+        .button {
+            height: 30%;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 5%;
+            padding: 7%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            outline: 2.0px solid #6C4DD6;
+            display: flex;
+            transition: background-color 0.3s ease;
+            font-size: 18px;
+            font-weight: 400;
+            color: #6f6f6f;
+        }
+
+        .button:hover {
+            background-color: #6C4DD6;
+            color: #fff;
+
+
+        }
+    }
+
+    .secondSection {
+        width: 35%;
+        background-color: none;
+        height: 80%;
+        justify-content: space-evenly;
+        gap: 20%;
+        display: flex;
+        flex-direction: column;
+
+        .button {
+            height: 30%;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 5%;
+            padding: 7%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            outline: 2.0px solid #6C4DD6;
+            display: flex;
+            transition: background-color 0.3s ease;
+            font-size: 18px;
+            font-weight: 400;
+            color: #6f6f6f;
+        }
+
+        .button:hover {
+            background-color: #6C4DD6;
+            color: #fff;
+
+
+        }
+    }
+        .thirdSection {
+            width: 35%;
+            background-color: none;
+            height: 80%;
+            justify-content: flex-start;
+            // gap: 20%;
+            margin-bottom: 4%;
+            display: flex;
+            flex-direction: column;
+    
+            .button {
+                height: 30%;
+                width: 100%;
+                background-color: #fff;
+                border-radius: 5%;
+                padding: 7%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                outline: 2.0px solid #6C4DD6;
+                display: flex;
+                transition: background-color 0.3s ease;
+                font-size: 18px;
+                font-weight: 400;
+                color: #6f6f6f;
+            }
+    
+            .button:hover {
+                background-color: #6C4DD6;
+                color: #fff;
+    
+    
+            }
+        }
+
+
+}

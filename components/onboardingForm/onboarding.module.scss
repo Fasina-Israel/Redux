@@ -1,0 +1,122 @@
+.form {
+    height: 70vh;
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 1%;
+
+    .progressBarContainer {
+        height: 10vh;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: none;
+        flex-direction: column;
+        gap: 10%;
+
+        .progressBar {
+            width: 90%;
+            height: 5px;
+            background-color: #f6f6f6;
+
+        }
+
+        .tracker {
+            width: 90%;
+            height: 50%;
+            background-color: none;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            gap: 70%;
+
+            .number {
+                color: #6C4DD6
+            }
+
+            .backIcon {
+                color: #6C4DD6
+            }
+        }
+    }
+
+
+
+    .button {
+        background: #6C4DD6;
+        padding: 0.5rem;
+        width: 100%
+    }
+
+    .header {
+        width: 85%;
+        height: 7%;
+        background-color: none;
+        justify-content: flex-start;
+        align-items: center;
+
+        h1 {
+            font-size: 36px;
+            font-family: inter;
+            font-weight: 600;
+        }
+    }
+
+    .subHeader {
+        width: 85%;
+        height: 5%;
+        background-color: none;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: -2%;
+
+        h1 {
+            font-size: 20px;
+            font-family: inter;
+            font-weight: 500;
+            color: GREY;
+        }
+    }
+
+    .footer {
+        gap: 3rem;
+        display: flex;
+        width: 85%;
+        justify-content: flex-end;
+
+        .nextButton {
+            height: 30%;
+            width: 20%;
+            background-color: #6C4DD6;
+            border-radius: 5%;
+            padding: 2%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+
+            h1 {
+                font-size: 18px;
+                font-weight: 400;
+                color: #fff;
+            }
+        }
+    }
+
+    .body {
+        height: 50%;
+        width: 85%;
+        background-color: none;
+        display: flex;
+        flex-direction: column;
+        margin-top: -3%;
+        background-color: none;
+    }
+}
