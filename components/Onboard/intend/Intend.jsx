@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 import styles from './intend.module.scss'
 import { fuziondotonboarding } from '../constant/constants';
+import { useDispatch, useSelector } from 'react-redux';
+import { setFormaData } from '@/store/onboardSlice';
 
-const Intend = ({ formData, setFormData }) => {
+const Intend = ({ }) => {
     const [value, setValue] = useState('');
-
-    const handleAnswer = (answer) => {
-
-        setValue(answer);
-
-        console.log('work');
+    const dispatch = useDispatch()
+    const { formData } = useSelector(state => state.onboard)
+    // console.log(state)
+    const handleAnswer = (question, answer) => {
+        dispatch(setFormaData({ question, answer }))
     }
+    const question = fuziondotonboarding.questions[0].question
     return (
         <div className={styles.intendFormContainer}>
             <div className={styles.firstSection}>
@@ -19,9 +21,10 @@ const Intend = ({ formData, setFormData }) => {
                     return (
                         <button
                             onClick={() => {
-                                handleAnswer(choice);
+                                handleAnswer(question, choice);
                             }}
-                            className={styles.button}>
+                            className={`${styles.button} ${formData[question] === choice ? styles.button_selected : ''}`}
+                        >
                             {choice}
                         </button>
                     )
